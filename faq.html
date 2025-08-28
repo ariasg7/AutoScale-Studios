@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoScale Solutions | FAQ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth; /* enables smooth scroll */
+    }
+  </style>
+</head>
+<body class="bg-[#050505] text-white">
+
+<!-- Header -->
+<header class="fixed top-0 w-full bg-black border-b-2 border-white z-50">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="index.html" class="text-2xl font-bold">
+      <span class="text-white">AutoScale</span><span class="text-[#999]">Studios</span>
+    </a>
+
+    <!-- Nav -->
+    <nav class="hidden md:flex items-center space-x-4">
+      <a href="/index.html#services" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        Services
+      </a>
+      <a href="faq.html" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        FAQ
+      </a>
+      <a href="/index.html#about" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        About
+      </a>
+      <a href="/index.html#contact" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        Contact
+      </a>
+      <a href="casestudies.html" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        Case Studies
+      </a>
+    </nav>
+
+    <!-- Button -->
+    <div class="hidden md:block">
+      <a href="/index.html#contact" class="relative px-4 py-2 text-black bg-white border-2 border-white rounded transition-all duration-300 hover:bg-black hover:text-white hover:border-white">
+        Get Started
+      </a>
+    </div>
+  </div>
+</header>
+
+
+
+  <!-- Hero -->
+  <section class="py-24 px-6 bg-gradient-to-b from-[#000000] to-[#0303030]">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center px-4 py-2 rounded-full border border-[#212121] bg-[#080808] text-sm text-white">
+        Get Your Questions Answered
+      </div>
+      <br><br>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Frequently Asked Questions</h1>
+      <p class="text-xl text-[#999999] mb-8 max-w-3xl mx-auto">
+        Everything you need to know about AutoScale Studios, our AI solutions, 
+        implementation process, and how we can transform your business.
+      </p>
+      <!-- Search -->
+      <div class="relative max-w-2xl mx-auto">
+        <svg class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" placeholder="Search for answers..." class="w-full pl-10 py-3 rounded bg-[#111111] border border-[#010101] focus:outline-none" />
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!-- FAQ Categories -->
+
+  <section class="py-16 px-6 bg-black">
+  <div class="w-full max-w-4xl mx-auto">
+
+    <!-- TAB LIST -->
+    <div role="tablist" id="tabs" aria-orientation="horizontal"
+         class="bg-[#1A1A1A] text-white h-9 rounded-xl p-[3px] grid grid-cols-2 md:grid-cols-5 gap-1">
+
+      <!-- General Questions (active by default) -->
+      <button type="button" role="tab" aria-selected="true" data-tab="general"
+        class="tab-btn flex items-center justify-center gap-2 rounded-xl px-2 py-1 text-xs md:text-sm font-medium transition-colors bg-[#111111]">
+        <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 24 24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
+  </svg>
+        <span class="hidden sm:inline">General Questions</span>
+      </button>
+
+      <!-- Services & Solutions -->
+      <button type="button" role="tab" aria-selected="false" data-tab="services"
+        class="tab-btn flex items-center justify-center gap-2 rounded-xl px-2 py-1 text-xs md:text-sm font-medium transition-colors bg-[#1A1A1A]">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+       viewBox="0 0 24 24" 
+       fill="none" 
+       stroke="currentColor" 
+       stroke-width="2" 
+       stroke-linecap="round" 
+       stroke-linejoin="round" 
+       class="w-4 h-4 text-white">
+    <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+  </svg>
+        <span class="hidden sm:inline">Services &amp; Solutions</span>
+      </button>
+
+      <!-- Implementation -->
+      <button type="button" role="tab" aria-selected="false" data-tab="implementation"
+        class="tab-btn flex items-center justify-center gap-2 rounded-xl px-2 py-1 text-xs md:text-sm font-medium transition-colors bg-[#1A1A1A]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+     fill="none" stroke="currentColor" stroke-width="2" 
+     stroke-linecap="round" stroke-linejoin="round" 
+     class="w-4 h-4 text-white" aria-hidden="true">
+  <path d="M12 18V5"/>
+  <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/>
+  <path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/>
+  <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/>
+  <path d="M18 18a4 4 0 0 0 2-7.464"/>
+  <path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/>
+  <path d="M6 18a4 4 0 0 1-2-7.464"/>
+  <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/>
+</svg>
+        <span class="hidden sm:inline">Implementation</span>
+      </button>
+
+      <!-- Pricing -->
+      <button type="button" role="tab" aria-selected="false" data-tab="pricing"
+        class="tab-btn flex items-center justify-center gap-2 rounded-xl px-2 py-1 text-xs md:text-sm font-medium transition-colors bg-[#1A1A1A]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+     fill="none" stroke="currentColor" stroke-width="2" 
+     stroke-linecap="round" stroke-linejoin="round" 
+     class="w-4 h-4 text-white" aria-hidden="true">
+  <line x1="12" x2="12" y1="2" y2="22"/>
+  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+</svg>
+        <span class="hidden sm:inline">Pricing & Investment</span>
+      </button>
+
+      <!-- Technical -->
+      <button type="button" role="tab" aria-selected="false" data-tab="technical"
+        class="tab-btn flex items-center justify-center gap-2 rounded-xl px-2 py-1 text-xs md:text-sm font-medium transition-colors bg-[#1A1A1A]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+     fill="none" stroke="currentColor" stroke-width="2" 
+     stroke-linecap="round" stroke-linejoin="round" 
+     class="w-4 h-4 text-white" aria-hidden="true">
+  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+</svg>
+        <span class="hidden sm:inline">Technical Questions</span>
+      </button>
+
+    </div>
+
+    <!-- TAB PANELS -->
+    <div id="tab-panels" class="mt-12 space-y-8">
+
+      <!-- General Questions Panel -->
+      <div role="tabpanel" data-panel="general">
+        <h2 class="text-4xl font-bold text-center mb-8">General Questions</h2>
+        <p class="text-center text-[#999999] max-w-2xl mx-auto mb-8">
+            2 Questions Found
+        </p>
+        <div class="space-y-4">
+          <details class="group border border-[#292929] rounded-lg bg-[#111111]">
+            <summary class="cursor-pointer flex justify-between items-center p-6 font-medium">
+              <span>What is AutoScale Studios?</span>
+              <span class="transition-transform group-open:rotate-90">➤</span>
+            </summary>
+            <div class="px-6 pb-6 text-gray-400">
+              AutoScale Studios is a premier AI implementation company…
+            </div>
+          </details>
+          <details class="group border border-[#292929] rounded-lg bg-[#111111]">
+            <summary class="cursor-pointer flex justify-between items-center p-6 font-medium">
+              <span>What industries do you work with?</span>
+              <span class="transition-transform group-open:rotate-90">➤</span>
+            </summary>
+            <div class="px-6 pb-6 text-gray-400">
+              Healthcare, fitness, SaaS, e-commerce, automotive, finance, real estate, and more.
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Services & Solutions Panel -->
+      <div role="tabpanel" data-panel="services" hidden>
+        <h2 class="text-4xl font-bold text-center mb-8">Services & Solutions</h2>
+        <p class="text-center text-[#999999] max-w-2xl mx-auto mb-8">
+            1 Question Found
+        </p>
+        <div class="space-y-4">
+          <details class="group border border-[#292929] rounded-lg bg-[#111111]">
+            <summary class="cursor-pointer flex justify-between items-center p-6 font-medium">
+              <span>What services do you offer?</span>
+              <span class="transition-transform group-open:rotate-90">➤</span>
+            </summary>
+            <div class="px-6 pb-6 text-gray-400">
+              AI booking tools, automation, ads management, web design, and social media marketing.
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Implementation Panel -->
+      <div role="tabpanel" data-panel="implementation" hidden>
+        <h2 class="text-4xl font-bold text-center mb-8">Implementation</h2>
+        <p class="text-center text-[#999999] max-w-2xl mx-auto mb-8">
+            1 Question Found
+        </p>
+        <div class="space-y-4">
+          <details class="group border border-[#292929] rounded-lg bg-[#111111]">
+            <summary class="cursor-pointer flex justify-between items-center p-6 font-medium">
+              <span>How long does implementation take?</span>
+              <span class="transition-transform group-open:rotate-90">➤</span>
+            </summary>
+            <div class="px-6 pb-6 text-gray-400">
+              Most implementations complete in 2-6 weeks depending on complexity.
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Pricing Panel -->
+      <div role="tabpanel" data-panel="pricing" hidden>
+        <h2 class="text-4xl font-bold text-center mb-8">Pricing</h2>
+        <p class="text-center text-[#999999] max-w-2xl mx-auto mb-8">
+            1 Question Found
+        </p>
+        <div class="space-y-4">
+          <details class="group border border-[#292929] rounded-lg bg-[#111111]">
+            <summary class="cursor-pointer flex justify-between items-center p-6 font-medium">
+              <span>How is pricing structured?</span>
+              <span class="transition-transform group-open:rotate-90">➤</span>
+            </summary>
+            <div class="px-6 pb-6 text-gray-400">
+              Pricing is flexible: monthly retainer or one-time project fee.
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Technical Panel -->
+      <div role="tabpanel" data-panel="technical" hidden>
+        <h2 class="text-4xl font-bold text-center mb-8">Technical</h2>
+        <p class="text-center text-[#999999] max-w-2xl mx-auto mb-8">
+            1 Question Found
+        </p>
+        <div class="space-y-4">
+          <details class="group border border-[#292929] rounded-lg bg-[#111111]">
+            <summary class="cursor-pointer flex justify-between items-center p-6 font-medium">
+              <span>What technologies do you use?</span>
+              <span class="transition-transform group-open:rotate-90">➤</span>
+            </summary>
+            <div class="px-6 pb-6 text-gray-400">
+              We leverage Python, TensorFlow, PyTorch, Node.js, cloud APIs, and more.
+            </div>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<script>
+  const tabs = document.querySelectorAll('#tabs [role="tab"]');
+  const panels = document.querySelectorAll('#tab-panels [role="tabpanel"]');
+  const searchInput = document.querySelector('input[placeholder="Search for answers..."]');
+
+  function setActiveTab(clicked) {
+    // reset tabs
+    tabs.forEach(t => {
+      t.setAttribute('aria-selected', 'false');
+      t.classList.remove('bg-[#111111]');
+      t.classList.add('bg-[#1A1A1A]');
+    });
+
+    // set clicked tab
+    clicked.setAttribute('aria-selected', 'true');
+    clicked.classList.remove('bg-[#1A1A1A]');
+    clicked.classList.add('bg-[#111111]');
+
+    // show only the target panel (unless searching)
+    const target = clicked.dataset.tab;
+    panels.forEach(p => {
+      p.hidden = p.dataset.panel !== target;
+    });
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      setActiveTab(tab);
+      if (searchInput.value.trim() !== "") {
+        filterQuestions(searchInput.value); // reapply search inside active tab
+      }
+    });
+  });
+
+  function filterQuestions(query) {
+    const searchTerm = query.toLowerCase();
+
+    if (!searchTerm) {
+      // If search is cleared, restore normal tab view
+      const activeTab = document.querySelector('#tabs [aria-selected="true"]') || tabs[0];
+      setActiveTab(activeTab);
+      panels.forEach(panel => {
+        const details = panel.querySelectorAll('details');
+        details.forEach(d => d.style.display = ''); // reset all
+      });
+      return;
+    }
+
+    // If searching, show ALL panels but filter questions inside them
+    panels.forEach(panel => {
+      const details = panel.querySelectorAll('details');
+      let visibleCount = 0;
+
+      details.forEach(d => {
+        const text = d.innerText.toLowerCase();
+        if (text.includes(searchTerm)) {
+          d.style.display = '';
+          visibleCount++;
+        } else {
+          d.style.display = 'none';
+        }
+      });
+
+      // update counter
+      const counter = panel.querySelector('p');
+      if (counter) {
+        counter.textContent = visibleCount > 0
+          ? `${visibleCount} Question${visibleCount !== 1 ? 's' : ''} Found`
+          : "No questions found.";
+      }
+
+      // show/hide whole panel depending on matches
+      panel.hidden = visibleCount === 0;
+    });
+  }
+
+  searchInput.addEventListener('input', e => {
+    filterQuestions(e.target.value);
+  });
+
+  // Initialize default tab
+  setActiveTab(tabs[0]);
+</script>
+
+
+
+
+ <!-- Still Have Questions -->
+<section class="py-16 px-6 bg-[#050505]">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl text-white font-bold mb-4">Still Have Questions?</h2>
+    <p class="text-xl text-[#999999] mb-8">Our team is here to help you understand how AI can transform your business.</p>
+
+    <div class="grid md:grid-cols-3 gap-8 mb-12 items-stretch">
+      <!-- Card 1 -->
+      <div class="p-6 border border-[#292929] rounded-lg bg-[#111111] flex flex-col justify-between h-full">
+        <div>
+          <!-- fixed-size icon container so all icons occupy same vertical space -->
+          <div class="h-16 flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
+            </svg>
+          </div>
+
+          <h3 class="font-semibold mb-2">Live Chat</h3>
+          <p class="text-sm text-[#999999] mb-4">Get instant answers from our AI experts</p>
+        </div>
+
+        <div class="mt-4">
+          <button class="w-full bg-black border border-[#1A1A1A] px-4 py-2 rounded hover:bg-white hover:text-black transition">Start Chat</button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p-6 border border-[#292929] rounded-lg bg-[#111111] flex flex-col justify-between h-full">
+        <div>
+          <div class="h-16 flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 6v6l4 2"></path>
+            </svg>
+          </div>
+
+          <h3 class="font-semibold mb-2">Schedule Call</h3>
+          <p class="text-sm text-[#999999] mb-4">Book a free 30-minute consultation</p>
+        </div>
+
+        <div class="mt-4">
+          <button class="w-full bg-black border border-[#1A1A1A] px-4 py-2 rounded hover:bg-white hover:text-black transition">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-6 border border-[#292929] rounded-lg bg-[#111111] flex flex-col justify-between h-full">
+        <div>
+          <div class="h-16 flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 010 7.75"></path>
+            </svg>
+          </div>
+
+          <h3 class="font-semibold mb-2">Contact Team</h3>
+          <p class="text-sm text-[#999999] mb-4">Reach out directly to our specialists</p>
+        </div>
+
+        <div class="mt-4">
+          <button class="w-full bg-black border border-[#1A1A1A] px-4 py-2 rounded hover:bg-white hover:text-black transition">Contact Us</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#contact" class="bg-white text-black px-6 py-3 rounded hover:bg-gray-200 flex items-center justify-center">
+        Get Started Today →
+      </a>
+      <a href="#case-studies" class="border border-white px-6 py-3 rounded hover:bg-white hover:text-black flex items-center justify-center">
+        View Case Studies
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Quick Stats -->
+  <section class="py-12 px-6 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="text-2xl font-bold mb-1">24/7</div>
+        <div class="text-sm text-gray-400">Support Available</div>
+      </div>
+      <div>
+        <div class="text-2xl font-bold mb-1">&lt; 2 hours</div>
+        <div class="text-sm text-gray-400">Response Time</div>
+      </div>
+      <div>
+        <div class="text-2xl font-bold mb-1">500+</div>
+        <div class="text-sm text-gray-400">Happy Clients</div>
+      </div>
+      <div>
+        <div class="text-2xl font-bold mb-1">98%</div>
+        <div class="text-sm text-gray-400">Satisfaction Rate</div>
+      </div>
+    </div>
+  </section>
+
+
+<footer class="bg-white text-white">
+  <div class="container mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <!-- Company Info -->
+      <div class="lg:col-span-2">
+        <div class="text-2xl text-black font-bold mb-4">
+          AutoScale<span class="text-white/60">Studios</span>
+        </div>
+        <p class="text-[#333] mb-6 max-w-md">
+          Transforming businesses through intelligent AI solutions. From automated booking systems 
+          to comprehensive marketing strategies, we help you scale efficiently and profitably.
+        </p>
+        <div class="flex space-x-4">
+  <!-- LinkedIn -->
+  <a href="#" class="border border-black text-white hover:bg-white/10 rounded p-2 inline-flex items-center justify-center">
+    <svg class="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M4.98 3.5C4.98 5.43 3.43 7 1.5 7S-1 5.43-1 3.5 0.57 0 2.5 0 4.98 1.57 4.98 3.5zM.02 8h4.96v16H.02V8zm7.44 0h4.76v2.18h.07c.66-1.25 2.27-2.56 4.68-2.56 5 0 5.92 3.29 5.92 7.56v8.82h-4.96v-7.81c0-1.87-.03-4.27-2.61-4.27-2.61 0-3.01 2.04-3.01 4.14v7.94H7.46V8z"/>
+    </svg>
+  </a>
+
+  <!-- X / Twitter -->
+  <a href="#" class="border border-black text-white hover:bg-white/10 rounded p-2 inline-flex items-center justify-center">
+    <svg class="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M23 3a10.9 10.9 0 01-3.14.86A4.48 4.48 0 0022.4 1s-1 .5-2 1a4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+    </svg>
+  </a>
+
+
+  <!-- Instagram -->
+  <a href="#" class="border border-black text-white hover:bg-white/10 rounded p-2 inline-flex items-center justify-center">
+    <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <circle cx="12" cy="12" r="5"></circle>
+      <circle cx="17.5" cy="6.5" r="1.5"></circle>
+    </svg>
+  </a>
+</div>
+
+      </div>
+
+      <!-- Services -->
+        <div>
+        <h3 class="font-semibold text-black mb-4">Services</h3>
+        <ul class="space-y-2 text-[#333]">
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                AI Booking Tool
+            </a>
+            </li>
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                AI Automation
+            </a>
+            </li>
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                Ad Management
+            </a>
+            </li>
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                Website Design
+            </a>
+            </li>
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                Social Media Marketing
+            </a>
+            </li>
+        </ul>
+        </div>
+
+
+      <!-- Contact -->
+    <div>
+    <h3 class="font-semibold text-black mb-4">Contact</h3>
+    <div class="space-y-3 text-white/80">
+        <!-- Mail -->
+        <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 text-[#333]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+        </svg>
+        <span class="text-sm text-[#333]">hello@autoscalestudios.com</span>
+        </div>
+
+        <!-- Phone -->
+        <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 text-[#333]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+        </svg>
+        <span class="text-sm text-[#333]">+1 (555) AI-SCALE</span>
+        </div>
+
+        <!-- Map Pin -->
+        <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 text-[#333]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span class="text-sm text-[#333]">Remote & On-site</span>
+        </div>
+    </div>
+    </div>
+
+      </div>
+    </div>
+
+    <div class="border-t border-[#333] mb-8"></div>
+
+    <!-- Bottom Section -->
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="text-white/60 text-sm mb-4 md:mb-0">
+        © 2024 AutoScale Studios. All rights reserved.
+      </div>
+      <div class="flex space-x-6 text-sm text-white/60">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

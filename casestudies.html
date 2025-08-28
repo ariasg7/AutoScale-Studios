@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - AutoScale Studios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-size: 16px;
+            --background: #000000;
+            --foreground: #ffffff;
+            --card: #111111;
+            --card-foreground: #ffffff;
+            --primary: #ffffff;
+            --primary-foreground: #000000;
+            --secondary: #1a1a1a;
+            --secondary-foreground: #ffffff;
+            --muted: #1a1a1a;
+            --muted-foreground: #999999;
+            --border: rgba(255, 255, 255, 0.1);
+            --radius: 0.5rem;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--foreground);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            font-size: var(--font-size);
+        }
+        
+        .bg-background { background-color: var(--background); }
+        .bg-card { background-color: var(--card); }
+        .bg-muted { background-color: var(--muted); }
+        .text-foreground { color: var(--foreground); }
+        .text-muted-foreground { color: var(--muted-foreground); }
+        .border-border { border-color: var(--border); }
+        
+        .video-thumbnail {
+            transition: all 0.3s ease;
+        }
+        
+        .video-thumbnail:hover .play-overlay {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        
+        .video-thumbnail:hover .play-button {
+            transform: scale(1.1);
+        }
+        
+        .card-hover:hover {
+            box-shadow: 0 20px 25px -5px rgba(255, 255, 255, 0.1), 0 10px 10px -5px rgba(255, 255, 255, 0.04);
+        }
+        
+        .aspect-video {
+            aspect-ratio: 16 / 9;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        h2 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+        
+        h3 {
+            font-size: 1.875rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        
+        h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: calc(var(--radius) - 2px);
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        
+        .badge-secondary {
+            background-color: var(--secondary);
+            color: var(--secondary-foreground);
+        }
+        
+        .badge-outline {
+            border: 1px solid var(--border);
+            background-color: transparent;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+        }
+        
+        .btn-primary {
+            background-color: var(--foreground);
+            color: var(--background);
+            padding: 0.5rem 1rem;
+        }
+        
+        .btn-primary:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .btn-outline {
+            border: 1px solid var(--border);
+            background-color: transparent;
+            color: var(--foreground);
+            padding: 0.5rem 1rem;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--muted);
+        }
+        
+        .btn-sm {
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+        }
+        
+        .btn-lg {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+        }
+        
+        .card {
+            background-color: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            transition: all 0.3s ease;
+        }
+        
+        .play-icon {
+            width: 1rem;
+            height: 1rem;
+            fill: currentColor;
+        }
+        
+        .play-icon-lg {
+            width: 3rem;
+            height: 3rem;
+            fill: currentColor;
+        }
+        
+        .gradient-to-b {
+            background: linear-gradient(to bottom, var(--background), rgba(17, 17, 17, 0.3));
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+<header class="fixed top-0 w-full bg-black border-b-2 border-white z-50">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="index.html" class="text-2xl font-bold">
+      <span class="text-white">AutoScale</span><span class="text-[#999]">Studios</span>
+    </a>
+
+    <!-- Nav -->
+    <nav class="hidden md:flex items-center space-x-4">
+      <a href="/index.html#services" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        Services
+      </a>
+      <a href="faq.html" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        FAQ
+      </a>
+      <a href="/index.html#about" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        About
+      </a>
+      <a href="/index.html#contact" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        Contact
+      </a>
+      <a href="casestudies.html" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        Case Studies
+      </a>
+    </nav>
+
+    <!-- Button -->
+    <div class="hidden md:block">
+      <a href="/index.html#contact" class="relative px-4 py-2 text-black bg-white border-2 border-white rounded transition-all duration-300 hover:bg-black hover:text-white hover:border-white">
+        Get Started
+      </a>
+    </div>
+  </div>
+</header>
+    <div class="min-h-screen bg-background">
+        <!-- Hero Section -->
+        <section class="py-24 px-6 gradient-to-b">
+            <div class="container mx-auto max-w-6xl">
+                <div class="text-center mb-16">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full border border-border bg-muted/30 text-sm font-medium mb-6">
+                        <svg class="w-4 h-4 mr-2 fill-current" viewBox="0 0 24 24">
+                            <polygon points="5,3 19,12 5,21"></polygon>
+                        </svg>
+                        Video Case Studies
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-bold text-foreground mb-6">
+                        Real Results in Action
+                    </h1>
+                    <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                        Watch how we've transformed businesses across industries with 
+                        AI-powered solutions. See the challenges, solutions, and measurable results in action.
+                    </p>
+                </div>
+
+                <!-- Stats Overview -->
+                <div class="grid md:grid-cols-4 gap-8 mb-16">
+                    <div class="text-center p-6 bg-card/50 rounded-lg border border-border">
+                        <div class="text-3xl font-bold text-foreground mb-2">500+</div>
+                        <div class="text-muted-foreground text-sm">Projects Completed</div>
+                    </div>
+                    <div class="text-center p-6 bg-card/50 rounded-lg border border-border">
+                        <div class="text-3xl font-bold text-foreground mb-2">$50M+</div>
+                        <div class="text-muted-foreground text-sm">Revenue Generated</div>
+                    </div>
+                    <div class="text-center p-6 bg-card/50 rounded-lg border border-border">
+                        <div class="text-3xl font-bold text-foreground mb-2">98%</div>
+                        <div class="text-muted-foreground text-sm">Success Rate</div>
+                    </div>
+                    <div class="text-center p-6 bg-card/50 rounded-lg border border-border">
+                        <div class="text-3xl font-bold text-foreground mb-2">15</div>
+                        <div class="text-muted-foreground text-sm">Industries Served</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Video -->
+        <section class="py-16 px-6">
+            <div class="container mx-auto max-w-6xl">
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-center text-foreground mb-4">
+                        Featured Case Study
+                    </h2>
+                    <p class="text-muted-foreground text-center max-w-2xl mx-auto" id="featured-description">
+                        See how we revolutionized patient scheduling with AI, reducing no-shows from 45% to 10% and saving 28 hours weekly.
+                    </p>
+                </div>
+
+                <div class="card overflow-hidden">
+                    <!-- Video Player -->
+                    <div class="relative aspect-video bg-muted/20">
+                        <div id="video-player" class="w-full h-full hidden">
+                            <iframe
+                                id="video-iframe"
+                                src="https://player.vimeo.com/video/917804735?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+                                class="w-full h-full"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowfullscreen
+                                title="Featured Case Study"
+                            ></iframe>
+                        </div>
+                        
+                        <div id="video-thumbnail" class="relative w-full h-full group cursor-pointer video-thumbnail">
+                            <img
+                                id="featured-thumbnail"
+                                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=450&fit=crop&crop=center"
+                                alt="Featured Video"
+                                class="w-full h-full object-cover"
+                            />
+                            <div class="play-overlay absolute inset-0 bg-black/40 flex items-center justify-center transition-colors">
+                                <div class="play-button bg-white/20 backdrop-blur-sm rounded-full p-6 transition-transform">
+                                    <svg class="play-icon-lg text-white" viewBox="0 0 24 24">
+                                        <polygon points="5,3 19,12 5,21"></polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="badge badge-outline text-sm" id="featured-category">AI Booking Tool</span>
+                            <div class="text-sm text-muted-foreground" id="featured-industry">Healthcare Technology</div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-foreground mb-4" id="featured-title">
+                            MedTech Solutions: 78% No-Show Reduction
+                        </h3>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <!-- Project Details -->
+                            <div>
+                                <h4 class="text-lg font-semibold mb-4">Project Details</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-center gap-4 text-sm">
+                                        <svg class="w-4 h-4 text-muted-foreground" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                                        </svg>
+                                        <span class="text-muted-foreground">Duration:</span>
+                                        <span class="font-medium" id="featured-duration">3 months</span>
+                                    </div>
+                                    <div class="flex items-center gap-4 text-sm">
+                                        <svg class="w-4 h-4 text-muted-foreground" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.5 7h-5c-.8 0-1.5.7-1.5 1.5v6c0 .8.7 1.5 1.5 1.5H15v6h5zM12.5 11.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5S11 9.17 11 10s.67 1.5 1.5 1.5zM5.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2zm2 16v-7H9V9c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v6h1.5v7h4z"/>
+                                        </svg>
+                                        <span class="text-muted-foreground">Team Size:</span>
+                                        <span class="font-medium" id="featured-team">4 specialists</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Key Results -->
+                            <div>
+                                <h4 class="text-lg font-semibold mb-4">Key Results</h4>
+                                <div class="grid grid-cols-2 gap-4" id="featured-results">
+                                    <div class="text-center p-4 bg-muted/20 rounded-lg">
+                                        <div class="text-2xl font-bold text-foreground mb-1">78%</div>
+                                        <div class="text-xs text-muted-foreground">No-show Reduction</div>
+                                    </div>
+                                    <div class="text-center p-4 bg-muted/20 rounded-lg">
+                                        <div class="text-2xl font-bold text-foreground mb-1">$2.3M</div>
+                                        <div class="text-xs text-muted-foreground">Revenue Increase</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial -->
+                        <div class="mt-8 bg-muted/20 rounded-lg p-6 border-l-4 border-primary">
+                            <div class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-yellow-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <div>
+                                    <p class="text-foreground italic mb-2" id="featured-testimonial">
+                                        "AutoScale Studios didn't just give us a booking system - they gave us our time back and dramatically improved our patient care efficiency."
+                                    </p>
+                                    <p class="text-sm text-muted-foreground" id="featured-client">- Sarah Chen, CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Gallery -->
+        <section class="py-16 px-6 bg-card/30">
+            <div class="container mx-auto max-w-6xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-foreground mb-4">
+                        More Success Stories
+                    </h2>
+                    <p class="text-muted-foreground">
+                        Explore more transformations across different industries
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8" id="video-gallery">
+                    <!-- Video cards will be dynamically generated here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 px-6">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-3xl font-bold text-foreground mb-4">
+                    Ready to Create Your Success Story?
+                </h2>
+                <p class="text-xl text-muted-foreground mb-8">
+                    Let's discuss how we can transform your business with AI-powered solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        Start Your Project
+                        <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 12h14m-7-7l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="/faq" class="btn btn-outline btn-lg">View FAQ</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Video studies data
+        const videoStudies = [
+            {
+                id: 'medtech',
+                category: 'AI Booking Tool',
+                title: 'MedTech Solutions: 78% No-Show Reduction',
+                client: 'MedTech Solutions',
+                industry: 'Healthcare Technology',
+                duration: '3 months',
+                teamSize: '4 specialists',
+                videoUrl: 'https://player.vimeo.com/video/917804735?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479',
+                thumbnailUrl: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=450&fit=crop&crop=center',
+                description: 'See how we revolutionized patient scheduling with AI, reducing no-shows from 45% to 10% and saving 28 hours weekly.',
+                results: [
+                    { metric: 'No-show Reduction', value: '78%', description: 'From 45% to 10% no-show rate' },
+                    { metric: 'Revenue Increase', value: '$2.3M', description: 'Annual revenue boost' },
+                ],
+                testimonial: 'AutoScale Studios didn\'t just give us a booking system - they gave us our time back and dramatically improved our patient care efficiency.',
+                clientName: 'Sarah Chen, CEO'
+            },
+            {
+                id: 'fitness',
+                category: 'AI Automation',
+                title: 'Elite Fitness: Complete Business Automation',
+                client: 'Elite Fitness',
+                industry: 'Fitness & Wellness',
+                duration: '4 months',
+                teamSize: '5 specialists',
+                videoUrl: 'https://player.vimeo.com/video/917804735?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479',
+                thumbnailUrl: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=450&fit=crop&crop=center',
+                description: 'Watch how we automated membership management for 2,000+ members across 3 locations, reducing admin time by 95%.',
+                results: [
+                    { metric: 'Admin Time Reduction', value: '95%', description: 'From 40hrs to 2hrs weekly' },
+                    { metric: 'Revenue Growth', value: '240%', description: 'In 6 months post-implementation' },
+                ],
+                testimonial: 'The ROI was immediate and continues to compound. We went from drowning in admin work to focusing entirely on what we love - helping our members achieve their fitness goals.',
+                clientName: 'Marcus Rodriguez, Founder'
+            },
+            {
+                id: 'automotive',
+                category: 'Website Design + AI',
+                title: 'Luxury Automotive: AI-Powered Sales Engine',
+                client: 'Luxury Automotive',
+                industry: 'Automotive Sales',
+                duration: '2 months',
+                teamSize: '6 specialists',
+                videoUrl: 'https://player.vimeo.com/video/917804735?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479',
+                thumbnailUrl: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=450&fit=crop&crop=center',
+                description: 'Discover how our AI-powered website transformed a 2% conversion rate to 40% with intelligent lead qualification.',
+                results: [
+                    { metric: 'Conversion Rate', value: '40%', description: 'From 2% to 40% visitor-to-lead' },
+                    { metric: 'Sales Cycle', value: '60%', description: 'Reduction in time to close' },
+                ],
+                testimonial: 'Our website is now our best salesperson. The AI chat system identifies serious buyers instantly, and our conversion rates are industry-leading.',
+                clientName: 'David Kim, Owner'
+            },
+            {
+                id: 'restaurant',
+                category: 'SMMA + AI Automation',
+                title: 'Restaurant Chain: Social Media Revolution',
+                client: 'Coastal Restaurants',
+                industry: 'Food & Hospitality',
+                duration: '6 months',
+                teamSize: '3 specialists',
+                videoUrl: 'https://player.vimeo.com/video/917804735?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479',
+                thumbnailUrl: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=450&fit=crop&crop=center',
+                description: 'Learn how AI-driven social media campaigns increased restaurant foot traffic by 180% across 5 locations.',
+                results: [
+                    { metric: 'Foot Traffic', value: '180%', description: 'Increase across all locations' },
+                    { metric: 'Social Engagement', value: '400%', description: 'Growth in social media reach' },
+                ],
+                testimonial: 'Our restaurants went from empty tables to fully booked every night. The AI campaigns brought exactly the right customers at the right times.',
+                clientName: 'Maria Santos, Operations Director'
+            }
+        ];
+
+        let selectedVideo = videoStudies[0];
+        let isPlaying = false;
+
+        // Initialize the page
+        function init() {
+            updateFeaturedVideo(selectedVideo);
+            renderVideoGallery();
+            bindEventListeners();
+        }
+
+        // Update featured video section
+        function updateFeaturedVideo(video) {
+            document.getElementById('featured-description').textContent = video.description;
+            document.getElementById('featured-thumbnail').src = video.thumbnailUrl;
+            document.getElementById('featured-category').textContent = video.category;
+            document.getElementById('featured-industry').textContent = video.industry;
+            document.getElementById('featured-title').textContent = video.title;
+            document.getElementById('featured-duration').textContent = video.duration;
+            document.getElementById('featured-team').textContent = video.teamSize;
+            document.getElementById('featured-testimonial').textContent = `"${video.testimonial}"`;
+            document.getElementById('featured-client').textContent = `- ${video.clientName}`;
+            
+            // Update results
+            const resultsContainer = document.getElementById('featured-results');
+            resultsContainer.innerHTML = video.results.map(result => `
+                <div class="text-center p-4 bg-muted/20 rounded-lg">
+                    <div class="text-2xl font-bold text-foreground mb-1">${result.value}</div>
+                    <div class="text-xs text-muted-foreground">${result.metric}</div>
+                </div>
+            `).join('');
+
+            // Update video iframe
+            document.getElementById('video-iframe').src = video.videoUrl;
+        }
+
+        // Render video gallery
+        function renderVideoGallery() {
+            const gallery = document.getElementById('video-gallery');
+            const otherVideos = videoStudies.filter(video => video.id !== selectedVideo.id);
+            
+            gallery.innerHTML = otherVideos.map(video => `
+                <div class="card card-hover cursor-pointer transition-all duration-300 bg-card/50 hover:bg-card overflow-hidden" onclick="handleVideoPlay('${video.id}')">
+                    <div class="relative aspect-video">
+                        <img src="${video.thumbnailUrl}" alt="${video.title}" class="w-full h-full object-cover" />
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center transition-colors">
+                            <div class="bg-white/20 backdrop-blur-sm rounded-full p-4">
+                                <svg class="w-8 h-8 text-white fill-current" viewBox="0 0 24 24">
+                                    <polygon points="5,3 19,12 5,21"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="badge badge-secondary absolute top-4 left-4 bg-black/70 text-white border-none">
+                            ${video.category}
+                        </span>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2">${video.title}</h3>
+                        <p class="text-muted-foreground text-sm mb-4">${video.description}</p>
+                        
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-4 text-xs text-muted-foreground">
+                                <div class="flex items-center gap-1">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                                    </svg>
+                                    ${video.duration}
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M7 14l5-5 5 5z"/>
+                                    </svg>
+                                    ${video.results[0].value}
+                                </div>
+                            </div>
+                            
+                            <span class="btn btn-outline btn-sm">
+                                Watch Now
+                                <svg class="w-3 h-3 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <polygon points="5,3 19,12 5,21"></polygon>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Handle video play
+        function handleVideoPlay(videoId) {
+            const video = videoStudies.find(v => v.id === videoId);
+            if (video) {
+                selectedVideo = video;
+                updateFeaturedVideo(video);
+                renderVideoGallery();
+                // Scroll to featured video
+                document.querySelector('section:nth-of-type(2)').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Bind event listeners
+        function bindEventListeners() {
+            // Featured video play button
+            document.getElementById('video-thumbnail').addEventListener('click', function() {
+                document.getElementById('video-thumbnail').style.display = 'none';
+                document.getElementById('video-player').classList.remove('hidden');
+                isPlaying = true;
+            });
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+    <footer class="bg-white text-white">
+  <div class="container mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <!-- Company Info -->
+      <div class="lg:col-span-2">
+        <div class="text-2xl text-black font-bold mb-4">
+          AutoScale<span class="text-white/60">Studios</span>
+        </div>
+        <p class="text-[#333] mb-6 max-w-md">
+          Transforming businesses through intelligent AI solutions. From automated booking systems 
+          to comprehensive marketing strategies, we help you scale efficiently and profitably.
+        </p>
+        <div class="flex space-x-4">
+  <!-- LinkedIn -->
+  <a href="#" class="border border-black text-white hover:bg-white/10 rounded p-2 inline-flex items-center justify-center">
+    <svg class="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M4.98 3.5C4.98 5.43 3.43 7 1.5 7S-1 5.43-1 3.5 0.57 0 2.5 0 4.98 1.57 4.98 3.5zM.02 8h4.96v16H.02V8zm7.44 0h4.76v2.18h.07c.66-1.25 2.27-2.56 4.68-2.56 5 0 5.92 3.29 5.92 7.56v8.82h-4.96v-7.81c0-1.87-.03-4.27-2.61-4.27-2.61 0-3.01 2.04-3.01 4.14v7.94H7.46V8z"/>
+    </svg>
+  </a>
+
+  <!-- X / Twitter -->
+  <a href="#" class="border border-black text-white hover:bg-white/10 rounded p-2 inline-flex items-center justify-center">
+    <svg class="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M23 3a10.9 10.9 0 01-3.14.86A4.48 4.48 0 0022.4 1s-1 .5-2 1a4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+    </svg>
+  </a>
+
+
+  <!-- Instagram -->
+  <a href="#" class="border border-black text-white hover:bg-white/10 rounded p-2 inline-flex items-center justify-center">
+    <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <circle cx="12" cy="12" r="5"></circle>
+      <circle cx="17.5" cy="6.5" r="1.5"></circle>
+    </svg>
+  </a>
+</div>
+
+      </div>
+
+      <!-- Services -->
+        <div>
+        <h3 class="font-semibold text-black mb-4">Services</h3>
+        <ul class="space-y-2 text-[#333]">
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                AI Booking Tool
+            </a>
+            </li>
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                AI Automation
+            </a>
+            </li>
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                Ad Management
+            </a>
+            </li>
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                Website Design
+            </a>
+            </li>
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                Social Media Marketing
+            </a>
+            </li>
+        </ul>
+        </div>
+
+
+      <!-- Contact -->
+    <div>
+    <h3 class="font-semibold text-black mb-4">Contact</h3>
+    <div class="space-y-3 text-white/80">
+        <!-- Mail -->
+        <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 text-[#333]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+        </svg>
+        <span class="text-sm text-[#333]">hello@autoscalestudios.com</span>
+        </div>
+
+        <!-- Phone -->
+        <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 text-[#333]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+        </svg>
+        <span class="text-sm text-[#333]">+1 (555) AI-SCALE</span>
+        </div>
+
+        <!-- Map Pin -->
+        <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 text-[#333]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span class="text-sm text-[#333]">Remote & On-site</span>
+        </div>
+    </div>
+    </div>
+
+      </div>
+    </div>
+
+    <div class="border-t border-[#333] mb-8"></div>
+
+    <!-- Bottom Section -->
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="text-white/60 text-sm mb-4 md:mb-0">
+        © 2024 AutoScale Studios. All rights reserved.
+      </div>
+      <div class="flex space-x-6 text-sm text-white/60">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

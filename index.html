@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoScale Studios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.258.0/dist/lucide.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-background text-foreground">
+
+<!-- Header -->
+<header class="fixed top-0 w-full bg-black border-b-2 border-white z-50">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="#" class="text-2xl font-bold">
+      <span class="text-white">AutoScale</span><span class="text-[#999]">Studios</span>
+    </a>
+
+    <!-- Nav -->
+    <nav class="hidden md:flex items-center space-x-4">
+      <a href="#services" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        Services
+      </a>
+      <a href="faq.html" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        FAQ
+      </a>
+      <a href="#about" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        About
+      </a>
+      <a href="#contact" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        Contact
+      </a>
+      <a href="casestudies.html" class="relative px-3 py-2 text-white transition-colors duration-300 hover:text-black hover:bg-white rounded">
+        Case Studies
+      </a>
+    </nav>
+
+    <!-- Button -->
+    <div class="hidden md:block">
+      <a href="#contact" class="relative px-4 py-2 text-black bg-white border-2 border-white rounded transition-all duration-300 hover:bg-black hover:text-white hover:border-white">
+        Get Started
+      </a>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Button -->
+    <div class="hidden md:block">
+      <a href="#contact" class="relative px-4 py-2 text-black bg-white border-2 border-white rounded transition-all duration-300 hover:bg-black hover:text-white hover:border-white">
+        Get Started
+      </a>
+    </div>
+  </div>
+</header>
+
+
+
+
+  <!-- Hero Section -->
+<section class="pt-32 pb-16 px-6 bg-black">
+  <div class="container mx-auto max-w-6xl text-center">
+    <!-- AI-Powered Business Solutions Tag -->
+    <div class="inline-flex items-center px-4 py-2 rounded-full border border-[#999] bg-[#080808] text-white text-sm font-medium mb-8">
+      <!-- Lightning / Zap SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 w-4 h-4 text-white" aria-hidden="true">
+          <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+      </svg>
+      AI-Powered Business Solutions
+    </div>
+
+    <!-- Main Hero Heading -->
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">
+      Scale Faster with <span class="block text-[#999]">AI-Powered Marketing</span>
+    </h1>
+
+    <!-- Hero Subtext -->
+    <p class="text-xl md:text-2xl text-[#999] mb-12 max-w-3xl mx-auto">
+      Get more clients, streamline operations, and grow revenue with smart automation and data-driven strategies
+    </p>
+
+    <!-- Hero Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+      <a href="#contact" class="bg-white text-black px-8 py-1 text-lg rounded flex items-center justify-center border border-transparent hover:bg-black hover:text-white hover:border-white transition-all duration-300">
+    Start Your AI Journey <span class="ml-2">→</span>
+    </a>
+      <a href="#services" class="bg-black border border-[#999] text-white px-8 py-1 text-lg rounded flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300">
+        View Our Work
+      </a>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <!-- AI Booking Tool -->
+      <div class="flex flex-col items-center p-6 rounded-lg border border-[#333] bg-[#111111]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mb-4 text-white" aria-hidden="true">
+              <rect x="5" y="6" width="14" height="12" rx="2" ry="2"></rect>
+              <line x1="9" y1="10" x2="9" y2="12"></line>
+              <line x1="15" y1="10" x2="15" y2="12"></line>
+              <line x1="3" y1="12" x2="5" y2="12"></line>
+              <line x1="19" y1="12" x2="21" y2="12"></line>
+              <line x1="9" y1="2" x2="12" y2="2"></line>
+              <line x1="12" y1="2" x2="12" y2="6"></line>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2 text-white">AI Booking Tool</h3>
+          <p class="text-[#999] text-center">Automate appointments and customer interactions with intelligent booking systems</p>
+      </div>
+
+      <!-- Ad Management -->
+      <div class="flex flex-col items-center p-6 rounded-lg border border-[#333] bg-[#111111]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mb-4 text-white" aria-hidden="true">
+              <path d="M16 7h6v6"></path>
+              <path d="M22 7l-8.5 8.5-5-5L2 17"></path>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2 text-white">Ad Management</h3>
+          <p class="text-[#999] text-center">Optimize your ad spend with AI-driven campaigns that maximize ROI</p>
+      </div>
+
+      <!-- Full Automation -->
+      <div class="flex flex-col items-center p-6 rounded-lg border border-[#333] bg-[#111111]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mb-4 text-white" aria-hidden="true">
+              <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2 text-white">Full Automation</h3>
+          <p class="text-[#999] text-center">Streamline workflows and eliminate manual tasks with custom AI solutions</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="services" class="py-24 px-6 bg-[#050505]">
+  <div class="container mx-auto max-w-6xl">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center px-4 py-2 rounded-full border border-[#999] bg-black text-white text-sm font-medium mb-6">
+        Our Services
+      </div>
+      <h2 class="text-3xl md:text-5xl font-bold mb-6 text-white">
+        Everything You Need to <span class="block text-[#999]">Scale with AI</span>
+      </h2>
+      <p class="text-xl text-[#999] max-w-3xl mx-auto">
+        From intelligent booking systems to comprehensive marketing strategies, we provide the AI-powered tools your business needs to thrive.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <!-- AI Booking Tool -->
+<div class="p-6 rounded-lg border border-[#333] bg-white hover:shadow-lg transition relative">
+  <div class="absolute -top-1 -right-1 bg-black text-white px-3 py-1 text-xs font-medium">Featured</div>
+  <div class="mb-4 text-4xl">
+    <!-- Calendar SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-black inline-block" aria-hidden="true">
+      <path d="M8 2v4"></path>
+      <path d="M16 2v4"></path>
+      <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+      <path d="M3 10h18"></path>
+    </svg>
+  </div>
+  <h3 class="text-xl font-semibold mb-2 text-black">AI Booking Tool</h3>
+  <p class="text-[#333] mb-4">
+    Revolutionary booking system that learns from customer behavior and optimizes scheduling automatically.
+  </p>
+  <ul class="mb-4 space-y-2 text-[#333] text-sm">
+    <li>• Smart appointment scheduling</li>
+    <li>• Customer preference learning</li>
+    <li>• Automated reminders & follow-ups</li>
+    <li>• Integration with existing systems</li>
+  </ul>
+  <a href="#contact" class="inline-block w-full text-center bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">Learn More →</a>
+</div>
+
+
+      <!-- AI Automation -->
+      <div class="p-6 rounded-lg border border-[#333] bg-[#111111] hover:shadow-lg transition">
+        <div class="mb-4 text-4xl">
+          <!-- Robot SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white inline-block" aria-hidden="true">
+            <rect x="5" y="6" width="14" height="12" rx="2" ry="2"></rect>
+            <line x1="9" y1="10" x2="9" y2="12"></line>
+            <line x1="15" y1="10" x2="15" y2="12"></line>
+            <line x1="3" y1="12" x2="5" y2="12"></line>
+            <line x1="19" y1="12" x2="21" y2="12"></line>
+            <line x1="9" y1="2" x2="12" y2="2"></line>
+            <line x1="12" y1="2" x2="12" y2="6"></line>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-white">AI Automation</h3>
+        <p class="text-[#999] mb-4">
+          Custom AI solutions that eliminate repetitive tasks and streamline your business operations.
+        </p>
+        <ul class="mb-4 space-y-2 text-[#999] text-sm">
+          <li>• Workflow automation</li>
+          <li>• Data processing & analysis</li>
+          <li>• Customer service bots</li>
+          <li>• Inventory management</li>
+        </ul>
+        <a href="#contact" class="inline-block w-full text-center border border-[#999] text-white px-4 py-2 rounded hover:bg-[#333] transition">Learn More →</a>
+      </div>
+
+      <!-- Ad Management -->
+      <div class="p-6 rounded-lg border border-[#333] bg-[#111111] hover:shadow-lg transition">
+        <div class="mb-4 text-4xl">
+          <!-- Target SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white inline-block" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="6"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-white">Ad Management</h3>
+        <p class="text-[#999] mb-4">
+          Data-driven advertising campaigns that adapt and optimize in real-time for maximum ROI.
+        </p>
+        <ul class="mb-4 space-y-2 text-[#999] text-sm">
+          <li>• Multi-platform campaigns</li>
+          <li>• AI-powered targeting</li>
+          <li>• Budget optimization</li>
+          <li>• Performance analytics</li>
+        </ul>
+        <a href="#contact" class="inline-block w-full text-center border border-[#999] text-white px-4 py-2 rounded hover:bg-[#333] transition">Learn More →</a>
+      </div>
+
+      <!-- Website Design -->
+      <div class="p-6 rounded-lg border border-[#333] bg-[#111111] hover:shadow-lg transition">
+        <div class="mb-4 text-4xl">
+          <!-- Globe SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white inline-block" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-white">Website Design</h3>
+        <p class="text-[#999] mb-4">
+          Modern, conversion-focused websites built with AI-enhanced user experience and performance.
+        </p>
+        <ul class="mb-4 space-y-2 text-[#999] text-sm">
+          <li>• Responsive design</li>
+          <li>• AI chat integration</li>
+          <li>• SEO optimization</li>
+          <li>• Analytics & tracking</li>
+        </ul>
+        <a href="#contact" class="inline-block w-full text-center border border-[#999] text-white px-4 py-2 rounded hover:bg-[#333] transition">Learn More →</a>
+      </div>
+
+      <!-- Social Media Marketing -->
+      <div class="p-6 rounded-lg border border-[#333] bg-[#111111] hover:shadow-lg transition">
+        <div class="mb-4 text-4xl">
+          <!-- Message Square SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white inline-block" aria-hidden="true">
+            <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-white">Social Media Marketing</h3>
+        <p class="text-[#999] mb-4">
+          Comprehensive SMMA services with AI-powered content creation and audience targeting.
+        </p>
+        <ul class="mb-4 space-y-2 text-[#999] text-sm">
+          <li>• Content strategy & creation</li>
+          <li>• Community management</li>
+          <li>• Influencer partnerships</li>
+          <li>• Performance tracking</li>
+        </ul>
+        <a href="#contact" class="inline-block w-full text-center border border-[#999] text-white px-4 py-2 rounded hover:bg-[#333] transition">Learn More →</a>
+      </div>
+    </div>
+
+   <!-- CTA Section -->
+<div class="flex justify-center">
+  <div class="bg-white text-black rounded-2xl p-8 md:p-12 text-center max-w-4xl w-full">
+    <h3 class="text-2xl md:text-4xl font-bold mb-4">Ready to Transform Your Business?</h3>
+    <p class="text-xl text-black/80 mb-8 max-w-2xl mx-auto">
+      Let's discuss how our AI solutions can streamline your operations and accelerate your growth.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#contact" class="bg-black text-white px-8 py-3 rounded hover:bg-gray-800 transition">Schedule Consultation</a>
+      <a href="casestudies.html" class="border border-black px-8 py-3 rounded hover:bg-black hover:text-white transition">View Case Studies</a>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<!---->
+
+
+<section class="py-24 px-6 bg-black">
+  <div class="container mx-auto max-w-6xl">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center px-4 py-2 rounded-full border border-[#999] bg-[#080808] text-white text-sm font-medium mb-6">
+        Client Success Stories
+      </div>
+      <h2 class="text-white md:text-5xl font-bold mb-6">
+        Real Results from <span class="block text-[#999]">Real Businesses</span>
+      </h2>
+      <p class="text-xl text-[#999] max-w-3xl mx-auto">
+        See how AutoScale Studios has helped businesses across industries transform their operations and achieve unprecedented growth with AI-powered solutions.
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <!-- Testimonial 1 -->
+    <div class="bg-[#111111] border border-[#333] rounded-lg p-8 hover:shadow-lg transition">
+        <!-- Quote SVG -->
+        <div class="mb-4 text-4xl text-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 inline-block opacity-30" aria-hidden="true">
+            <!-- Left quote -->
+            <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+            <!-- Right quote -->
+            <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+            </svg>
+        </div>
+
+        <div class="flex mb-2">
+            <span class="text-yellow-400">★</span>
+            <span class="text-yellow-400">★</span>
+            <span class="text-yellow-400">★</span>
+            <span class="text-yellow-400">★</span>
+            <span class="text-yellow-400">★</span>
+        </div>
+
+        <p class="text-white mb-4 text-sm leading-relaxed">
+            "AutoScale Studios completely transformed our patient booking system. Their AI tool reduced no-shows by 78% and increased our booking efficiency by 300%. The ROI was immediate and substantial."
+        </p>
+
+        <span class="inline-block px-3 py-1 text-[#999] bg-[#333] rounded-full text-xs font-medium mb-4">AI Booking Tool</span>
+
+        <div class="flex items-center">
+            <div class="w-12 h-12 mr-4 rounded-full bg-white text-black flex items-center justify-center font-medium">SC</div>
+            <div>
+            <div class="font-semibold text-white text-sm">Sarah Chen</div>
+            <div class="text-[#999999] text-xs">CEO, Healthcare Technology</div>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- Testimonial 2 -->
+      <div class="bg-[#111111] border border-[#333] rounded-lg p-8 hover:shadow-lg transition">
+            <div class="mb-4 text-4xl text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 inline-block opacity-30" aria-hidden="true">
+                <!-- Left quote -->
+                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                <!-- Right quote -->
+                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                </svg>
+            </div>
+        <div class="flex mb-2">
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+        </div>
+        <p class="text-white mb-4 text-sm leading-relaxed">
+          "The automation they built for our membership management and class scheduling is incredible. We went from spending 20 hours a week on admin to just 2 hours. Our revenue increased 240% in 6 months."
+        </p>
+        <span class="inline-block px-3 py-1 text-[#999] bg-[#333] rounded-full text-xs font-medium mb-4">AI Automation</span>
+        <div class="flex items-center">
+          <div class="w-12 h-12 mr-4 rounded-full bg-white text-black flex items-center justify-center font-medium">MR</div>
+          <div>
+            <div class="font-semibold text-white text-sm">Marcus Rodriguez</div>
+            <div class="text-[#999999] text-xs">Founder, Fitness & Wellness</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-[#111111] border border-[#333] rounded-lg p-8 hover:shadow-lg transition">
+        <div class="mb-4 text-4xl text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 inline-block opacity-30" aria-hidden="true">
+                <!-- Left quote -->
+                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                <!-- Right quote -->
+                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                </svg>
+        </div>
+        <div class="flex mb-2">
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+        </div>
+        <p class="text-white mb-4 text-sm leading-relaxed">
+          "Their ad management AI optimized our campaigns better than any agency we've worked with. Our cost per acquisition dropped 60% while our conversion rate doubled. Simply phenomenal results."
+        </p>
+        <span class="inline-block px-3 py-1 text-[#999] bg-[#333] rounded-full text-xs font-medium mb-4">Ad Management</span>
+        <div class="flex items-center">
+          <div class="w-12 h-12 mr-4 rounded-full bg-white text-black flex items-center justify-center font-medium">JW</div>
+          <div>
+            <div class="font-semibold text-white text-sm">Jennifer Walsh</div>
+            <div class="text-[#999999] text-xs">Marketing Director, TechStart Inc</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="bg-[#111111] border border-[#333] rounded-lg p-8 hover:shadow-lg transition">
+        <div class="mb-4 text-4xl text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 inline-block opacity-30" aria-hidden="true">
+                <!-- Left quote -->
+                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                <!-- Right quote -->
+                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                </svg>
+        </div>
+        <div class="flex mb-2">
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+        </div>
+        <p class="text-white mb-4 text-sm leading-relaxed">
+          "The website they designed doesn't just look stunning - it's a lead generation machine. The AI chat integration converts 40% of visitors into qualified leads. Best investment we've ever made."
+        </p>
+        <span class="inline-block px-3 py-1 text-[#999] bg-[#333] rounded-full text-xs font-medium mb-4">Website Design</span>
+        <div class="flex items-center">
+          <div class="w-12 h-12 mr-4 rounded-full bg-white text-black flex items-center justify-center font-medium">DK</div>
+          <div>
+            <div class="font-semibold text-white text-sm">David Kim</div>
+            <div class="text-[#999999] text-xs">Owner, Luxury Automotive</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="bg-[#111111] border border-[#333] rounded-lg p-8 hover:shadow-lg transition">
+        <div class="mb-4 text-4xl text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 inline-block opacity-30" aria-hidden="true">
+                <!-- Left quote -->
+                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                <!-- Right quote -->
+                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                </svg>
+        </div>
+        <div class="flex mb-2">
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+        </div>
+        <p class="text-white mb-4 text-sm leading-relaxed">
+          "Their social media marketing strategy powered by AI insights helped us grow from 10K to 500K followers in 8 months. Our online sales increased 850%. They understand the beauty industry perfectly."
+        </p>
+        <span class="inline-block px-3 py-1 text-[#999] bg-[#333] rounded-full text-xs font-medium mb-4">Social Media Marketing</span>
+        <div class="flex items-center">
+          <div class="w-12 h-12 mr-4 rounded-full bg-white text-black flex items-center justify-center font-medium">AF</div>
+          <div>
+            <div class="font-semibold text-white text-sm">Amanda Foster</div>
+            <div class="text-[#999999] text-xs">CEO, Beauty Collective</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 6 -->
+      <div class="bg-[#111111] border border-[#333] rounded-lg p-8 hover:shadow-lg transition">
+        <div class="mb-4 text-4xl text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 inline-block opacity-30" aria-hidden="true">
+                <!-- Left quote -->
+                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                <!-- Right quote -->
+                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                </svg>
+        </div>
+        <div class="flex mb-2">
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+          <span class="text-yellow-400">★</span>
+        </div>
+        <p class="text-white mb-4 text-sm leading-relaxed">
+          "We thought AI was only for tech companies. AutoScale proved us wrong. Their automation solution streamlined our entire supply chain and reduced operational costs by 45%. Game-changing partnership."
+        </p>
+        <span class="inline-block px-3 py-1 text-[#999] bg-[#333] rounded-full text-xs font-medium mb-4">AI Automation</span>
+        <div class="flex items-center">
+          <div class="w-12 h-12 mr-4 rounded-full bg-white text-black flex items-center justify-center font-medium">RT</div>
+          <div>
+            <div class="font-semibold text-white text-sm">Robert Thompson</div>
+            <div class="text-[#999999] text-xs">President, Industrial Manufacturing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div class="p-6">
+        <div class="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
+        <div class="text-gray-500 text-sm">Happy Clients</div>
+      </div>
+      <div class="p-6">
+        <div class="text-3xl md:text-4xl font-bold text-white mb-2">98%</div>
+        <div class="text-gray-500 text-sm">Success Rate</div>
+      </div>
+      <div class="p-6">
+        <div class="text-3xl md:text-4xl font-bold text-white mb-2">$50M+</div>
+        <div class="text-gray-500 text-sm">Revenue Generated</div>
+      </div>
+      <div class="p-6">
+        <div class="text-3xl md:text-4xl font-bold text-white mb-2">24/7</div>
+        <div class="text-gray-500 text-sm">Support Available</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id ="about"class="py-24 px-6 bg-black">
+  <div class="container mx-auto max-w-6xl">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      
+      <!-- Content -->
+      <div>
+        <div class="inline-flex items-center px-4 py-2 rounded-full border border-white bg-[#080808] text-white font-medium mb-6">
+          About AutoScale Studios
+        </div>
+        
+        <h2 class="text-white md:text-5xl font-bold mb-6 leading-tight">
+          AI Solutions That
+          <span class="block text-[#999999]">Transform Your Business</span>
+        </h2>
+        
+        <p class="text-lg text-[#999] mb-8 leading-relaxed">
+          At AutoScale Studios, we don’t just implement AI, we help businesses work smarter,
+          grow faster, and generate real results. Our team of AI engineers, marketing 
+          strategists, and automation experts create solutions that automate 
+          workflows, boost revenue, and free up your time.
+        </p>
+        
+        <div class="space-y-4 mb-8">
+          <div class="flex items-start">
+            <div class="w-2 h-2 rounded-full bg-gray-800 mt-2 mr-4 flex-shrink-0"></div>
+            <div>
+              <h4 class="font-semibold text-white mb-1">AI-First Approach</h4>
+              <p class="text-[#999]">Every solution leverages the latest in artificial intelligence to maximize efficiency</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="w-2 h-2 rounded-full bg-gray-800 mt-2 mr-4 flex-shrink-0"></div>
+            <div>
+              <h4 class="font-semibold text-white mb-1">Proven Results</h4>
+              <p class="text-[#999]">Our clients see measurable improvements in productivity, conversions, and revenue</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="w-2 h-2 rounded-full bg-gray-800 mt-2 mr-4 flex-shrink-0"></div>
+            <div>
+              <h4 class="font-semibold text-white mb-1">Full-Service Support</h4>
+              <p class="text-[#999]">From strategy to implementation and ongoing optimization, we’ve got you covered</p>
+            </div>
+          </div>
+        </div>
+        
+        <a href="#contact"><button class="bg-white text-black border border-transparent hover:bg-black hover:text-white hover:border-white px-8 py-1 text-lg rounded">
+            Learn Our Process
+        </button></a>
+
+      </div>
+
+      <!-- Stats Grid + Testimonial -->
+      <div>
+        <!-- Stats Grid -->
+<div class="grid grid-cols-2 gap-6 mb-8">
+  <div class="bg-[#111111] border border-[#333] rounded-lg p-6 text-center">
+    <!-- People SVG -->
+    <div class="mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-white mx-auto" aria-hidden="true">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+        <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+        <circle cx="9" cy="7" r="4"></circle>
+      </svg>
+    </div>
+    <div class="text-white font-bold text-white mb-2">500+</div>
+    <div class="text-sm text-white">Businesses Scaled</div>
+  </div>
+
+  <div class="bg-[#111111] border border-[#333] rounded-lg p-6 text-center">
+    <!-- Trending Up / Data Arrow SVG -->
+    <div class="mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-white mx-auto" aria-hidden="true">
+        <path d="M16 7h6v6"></path>
+        <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+      </svg>
+    </div>
+    <div class="text-3xl font-bold text-white mb-2">300%</div>
+    <div class="text-sm text-white">Average ROI Increase</div>
+  </div>
+
+  <div class="bg-[#111111] border border-[#333] rounded-lg p-6 text-center">
+    <!-- Lightning Bolt SVG -->
+    <div class="mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-white mx-auto" aria-hidden="true">
+        <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"></path>
+      </svg>
+    </div>
+    <div class="text-3xl font-bold text-white mb-2">10k+</div>
+    <div class="text-sm text-white">Hours Automated</div>
+  </div>
+
+  <div class="bg-[#111111] border border-[#333] rounded-lg p-6 text-center">
+    <!-- Award SVG -->
+    <div class="mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-white mx-auto" aria-hidden="true">
+        <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+        <circle cx="12" cy="8" r="6"></circle>
+      </svg>
+    </div>
+    <div class="text-3xl font-bold text-white mb-2">99%</div>
+    <div class="text-sm text-white">Client Satisfaction</div>
+  </div>
+</div>
+
+
+        <!-- Testimonial -->
+        <div class="bg-[#080808] border border-[#212121] rounded-lg p-6">
+          <p class="text-white font-medium mb-4 text-lg leading-relaxed">
+            "AutoScale Studios transformed our entire customer booking process. 
+            What used to take hours of manual work now happens automatically, 
+            and our conversion rate increased by 240%."
+          </p>
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black font-bold mr-4">
+              JS
+            </div>
+            <div>
+              <div class="font-semibold text-white">Jessica Smith</div>
+              <div class="text-sm text-white">CEO, TechStart Solutions</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" class="py-24 px-6 bg-[#050505]">
+  <div class="container mx-auto max-w-6xl">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center px-4 py-2 rounded-full border border-[#999] bg-black text-white text-sm font-medium mb-6">
+        Get In Touch
+      </div>
+      <h2 class="text-white md:text-5xl font-bold mb-6">
+        Ready to Scale Your Business?
+        <span class="block text-[#999]">Let's Talk AI Solutions</span>
+      </h2>
+      <p class="text-xl text-white max-w-3xl mx-auto">
+        Schedule a free consultation to discover how our AI solutions can transform your operations 
+        and accelerate your growth.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+   <!-- Contact Form -->
+<div style="width:100%; max-width:600px; margin:auto;">
+  <iframe
+    src="https://api.leadconnectorhq.com/widget/form/nq0U647Z0dHqXJS63J9B"
+    style="width:100%; height:1000px; border:none; border-radius:3px; overflow:hidden;"
+    id="inline-nq0U647Z0dHqXJS63J9B"
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-activation-type="alwaysActivated"
+    data-deactivation-type="neverDeactivate"
+    data-form-name="AutoScale Studios"
+    data-layout-iframe-id="inline-nq0U647Z0dHqXJS63J9B"
+    data-form-id="nq0U647Z0dHqXJS63J9B"
+    title="AutoScale Studios">
+  </iframe>
+</div>
+
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+
+
+
+
+
+
+
+      <!-- Contact Info & CTA + FAQ -->
+      <div class="space-y-8">
+        <!-- Quick Contact / CTA -->
+        <div class="bg-white text-white rounded-lg p-8">
+          <h3 class="text-2xl text-black font-bold mb-6">Get Started Today</h3>
+          <p class="text-[#999999] mb-8">
+            Ready to transform your business with AI? Book a free strategy call and discover 
+            how we can help you scale efficiently and profitably.
+          </p>
+          
+          <button class="w-full border-2 border-black bg-black text-white hover:bg-white hover:border-black hover:text-black mb-6 px-6 py-3 rounded flex items-center justify-center transition-colors duration-300">
+  <!-- Calendar Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2 text-white group-hover:text-black transition-colors duration-300" aria-hidden="true">
+    <path d="M8 2v4"></path>
+    <path d="M16 2v4"></path>
+    <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+    <path d="M3 10h18"></path>
+  </svg>
+  Schedule Free Consultation
+</button>
+
+
+
+
+          <div class="space-y-4 pt-6 border-t border-white/20">
+            <!-- Mail -->
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              </svg>
+              <span class = "text-black">hello@autoscalestudios.com</span>
+            </div>
+
+            <!-- Phone -->
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+              </svg>
+              <span class = "text-black">+1 (555) AI-SCALE</span>
+            </div>
+
+            <!-- Map Pin -->
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class = "text-black">Remote & On-site Available</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ / Common Questions -->
+        <div class="bg-white border rounded-lg p-8">
+          <h3 class="text-xl font-bold text-gray-800 mb-6">Common Questions</h3>
+          <div class="space-y-6">
+            <div>
+              <h4 class="font-semibold text-gray-800 mb-2">How quickly can we see results?</h4>
+              <p class="text-[#999999] text-sm">Most clients see initial improvements within 2-4 weeks, with significant ROI within 90 days.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 mb-2">What's included in the consultation?</h4>
+              <p class="text-[#999999] text-sm">A comprehensive audit of your current processes, AI opportunity assessment, and custom strategy roadmap.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 mb-2">Do you work with small businesses?</h4>
+              <p class="text-[#999999] text-sm">Absolutely! We have solutions for businesses of all sizes, from startups to enterprise clients.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer class="bg-white text-white">
+  <div class="container mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <!-- Company Info -->
+      <div class="lg:col-span-2">
+        <div class="text-2xl text-black font-bold mb-4">
+          AutoScale<span class="text-white/60">Studios</span>
+        </div>
+        <p class="text-[#333] mb-6 max-w-md">
+          Transforming businesses through intelligent AI solutions. From automated booking systems 
+          to comprehensive marketing strategies, we help you scale efficiently and profitably.
+        </p>
+        <div class="flex space-x-4">
+  <!-- LinkedIn -->
+  <a href="#" class="border border-black text-white hover:bg-white/10 rounded p-2 inline-flex items-center justify-center">
+    <svg class="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M4.98 3.5C4.98 5.43 3.43 7 1.5 7S-1 5.43-1 3.5 0.57 0 2.5 0 4.98 1.57 4.98 3.5zM.02 8h4.96v16H.02V8zm7.44 0h4.76v2.18h.07c.66-1.25 2.27-2.56 4.68-2.56 5 0 5.92 3.29 5.92 7.56v8.82h-4.96v-7.81c0-1.87-.03-4.27-2.61-4.27-2.61 0-3.01 2.04-3.01 4.14v7.94H7.46V8z"/>
+    </svg>
+  </a>
+
+  <!-- X / Twitter -->
+  <a href="#" class="border border-black text-white hover:bg-white/10 rounded p-2 inline-flex items-center justify-center">
+    <svg class="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M23 3a10.9 10.9 0 01-3.14.86A4.48 4.48 0 0022.4 1s-1 .5-2 1a4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+    </svg>
+  </a>
+
+
+  <!-- Instagram -->
+  <a href="#" class="border border-black text-white hover:bg-white/10 rounded p-2 inline-flex items-center justify-center">
+    <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <circle cx="12" cy="12" r="5"></circle>
+      <circle cx="17.5" cy="6.5" r="1.5"></circle>
+    </svg>
+  </a>
+</div>
+
+      </div>
+
+      <!-- Services -->
+              <div>
+        <h3 class="font-semibold text-black mb-4">Services</h3>
+        <ul class="space-y-2 text-[#333]">
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                AI Booking Tool
+            </a>
+            </li>
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                AI Automation
+            </a>
+            </li>
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                Ad Management
+            </a>
+            </li>
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                Website Design
+            </a>
+            </li>
+            <li>
+            <a href="#"
+                class="block w-full px-4 py-2 rounded-lg border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors">
+                Social Media Marketing
+            </a>
+            </li>
+        </ul>
+        </div>
+
+      <!-- Contact -->
+    <div>
+    <h3 class="font-semibold text-black mb-4">Contact</h3>
+    <div class="space-y-3 text-white/80">
+        <!-- Mail -->
+        <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 text-[#333]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+        </svg>
+        <span class="text-sm text-[#333]">hello@autoscalestudios.com</span>
+        </div>
+
+        <!-- Phone -->
+        <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 text-[#333]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+        </svg>
+        <span class="text-sm text-[#333]">+1 (555) AI-SCALE</span>
+        </div>
+
+        <!-- Map Pin -->
+        <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 text-[#333]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span class="text-sm text-[#333]">Remote & On-site</span>
+        </div>
+    </div>
+    </div>
+
+      </div>
+    </div>
+
+    <div class="border-t border-[#333] mb-8"></div>
+
+    <!-- Bottom Section -->
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="text-white/60 text-sm mb-4 md:mb-0">
+        © 2024 AutoScale Studios. All rights reserved.
+      </div>
+      <div class="flex space-x-6 text-sm text-white/60">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>
